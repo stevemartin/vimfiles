@@ -22,6 +22,7 @@ Gdiff production
 
 ####jump to diffs
 [c
+
 ]c
 
 ####update diff spec
@@ -38,5 +39,6 @@ ack -l your_search_term | xargs mvim -p -c /$1
 
 ## Ctags
 echo $GEM_HOME
+
 ctags -R --exclude#.git --exclude#log * $GEM_HOME
 
