@@ -1,6 +1,7 @@
 ## Vim
 ### Commenting
 \\\  - comments out
+
 \\   - uncomments
 
 ### Mode switching
@@ -8,8 +9,11 @@ jk - Escape
 
 ### Embedded
 \rccc  - Cucumber current (feature) file
+
 \rccl  - Cucumber current (feature file) line
+
 \rcss  - Rspec current (spec) file
+
 \rcll  - Rspec current (spec file) line
 
 ### Git

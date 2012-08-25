@@ -54,6 +54,18 @@ nmap <silent> <D-L> :call RunRspecCurrentLineConque()<CR>
 " ,Cmd-R for Last conque command
 nmap <silent> ,<D-R> :call RunLastConqueCommand()<CR>
 
+" fugitive settings
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set laststatus=2
+" set guifont=Menlo:h16
+nmap <leader>gs :Gstatus<cr>
+nmap <leader>gb :Gblame<cr>
+nmap <leader>gd :Gdiff<cr>
+nmap <leader>git :Git<cr>
+nmap <leader>gpush :Git push<cr>
+nmap <leader>gfpush :Git push -f<cr>
+
+" Vimrc and command stuff
 nnoremap <silent> <Leader>ev :e ~/.vim/vimrc<CR>
 nnoremap <silent> <Leader>sv :so ~/.vimrc<CR>
 nnoremap <silent> <Leader>uc :e ~/.vim/useful_commands.markdown<CR>
