@@ -1,7 +1,7 @@
 syntax on
 filetype plugin indent on
 set nu
-
+set tabpagemax=500
 " backups and swapfiles
 set nobackup
 set noswapfile
@@ -43,6 +43,8 @@ nmap <silent> <Leader>rccc :call RunCucumberCurrentFileConque()<CR>
 nmap <silent> <Leader>rccl :call RunCucumberCurrentLineConque()<CR>
 nmap <silent> <Leader>rcRR :call RunRakeConque()<CR>
 nmap <silent> <Leader>rcrl :call RunLastConqueCommand()<CR>
+
+nmap <silent> <Leader>ct :ConqueTerm bash<CR>
 
 nnoremap <silent> <C-s> :call RelatedSpecVOpen()<CR>
 nnoremap <silent> ,<C-s> :call RelatedSpecOpen()<CR>
