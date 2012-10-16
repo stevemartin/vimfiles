@@ -57,3 +57,22 @@ ctags -R --exclude#.git --exclude#log * $GEM_HOME
 
 ## Networking ( Mac )
 dscacheutl -flushcache
+
+## Symfony
+
+## Browsers
+### Firefox
+cmd f12   - opens firefox
+
+## Ruby
+### Pry
+#### As Debugger
+binding.pry
+
+#### As rails console
+pry -r ./config/environment
+
+
+#### Funding Circle
+in rails console to see crontab:
+Crontab.all.map {|c| [c.name, c.id] }
