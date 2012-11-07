@@ -10,3 +10,6 @@ bin/rake db:migrate RAILS_ENV=cucumber
 bin/rake db:migrate RAILS_ENV=development
 
 
+== Assets for local development
+RAILS_GROUP=assets rake symfony assets:less assets:precompile:primary assets:precompile:nondigest assets:headers assets:footers render_errors --trace
+

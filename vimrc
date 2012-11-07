@@ -110,3 +110,19 @@ endfunction
 nmap f1 :call FoldAllItBlocks()<CR>
 nmap f0 :execute "normal zE"<CR>
 
+set rtp+=/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-endwise'
+
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'scrooloose/nerdtree'
+"Bundle 'msanders/snipmate.vim'
+Bundle 'gregsexton/gitv'
+

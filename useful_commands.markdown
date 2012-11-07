@@ -36,6 +36,9 @@ diffupdate
 --- find all files with full path of type n
 find . | grep pdf
 
+### Find file by name
+sudo find / -name php.ini
+
 ### Perl
 #### Perl recursive search replace
 perl -i -pe "s/oldstring/NewString/gi" `find . -name *.blah`
@@ -53,7 +56,7 @@ ack --ignore-dir=bleh
 ## Ctags
 echo $GEM_HOME
 
-ctags -R --exclude#.git --exclude#log * $GEM_HOME
+ctags -R --exclude=.git --exclude=log * $GEM_HOME
 
 ## Networking ( Mac )
 dscacheutl -flushcache
