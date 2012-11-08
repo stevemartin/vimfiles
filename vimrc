@@ -120,9 +120,11 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-endwise'
+Bundle 'kien/ctrlp.vim'
 
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdtree'
 "Bundle 'msanders/snipmate.vim'
 Bundle 'gregsexton/gitv'
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim

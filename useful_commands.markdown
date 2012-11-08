@@ -1,4 +1,7 @@
 ## Vim
+### Open Quickfix list
+copen
+
 ### Commenting
 \\\  - comments out
 
@@ -17,6 +20,9 @@ jk - Escape
 \rcll  - Rspec current (spec file) line
 
 ### Git
+#### Remove all merged branches
+git branch -r --merged production | sed 's/ *origin\///' | grep -v 'production$' | xargs -I% git push origin :%
+
 #### Git diff a file against another branch
 Gdiff production
 
@@ -36,8 +42,27 @@ diffupdate
 --- find all files with full path of type n
 find . | grep pdf
 
+lsof -p <pid>
+lsof -i
+
+### Postgres
+
+#### Have a look at active pg connections
+select * from pg_stat_activity;
+
+#### Data folder
+ls /usr/local/var/postgres
+#### Edit config in brew install
+sudo vi /usr/local/var/postgres/postgresql.conf
+
 ### Find file by name
 sudo find / -name php.ini
+
+### PHP
+php -i #outputs php configuration (information)
+
+### start
+lunchy start -w php-cgi
 
 ### Perl
 #### Perl recursive search replace
