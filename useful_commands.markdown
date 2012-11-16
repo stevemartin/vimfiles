@@ -2,6 +2,11 @@
 ### Open Quickfix list
 copen
 
+#### (vim) Rails
+Scope all the form fields
+%s/= \(label\|text\|number\|range\|check\|radio\|select\)/= vc.\1/g
+
+
 ### Commenting
 \\\  - comments out
 
