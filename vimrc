@@ -127,4 +127,11 @@ Bundle 'scrooloose/nerdtree'
 "Bundle 'msanders/snipmate.vim'
 Bundle 'gregsexton/gitv'
 
+" Window management
+Bundle 'stevemartin/vim-ruby-conque'
+Bundle 'benmills/vimux'
+
+" Autocompletion
+Bundle 'ervandew/supertab'
+
 set runtimepath^=~/.vim/bundle/ctrlp.vim

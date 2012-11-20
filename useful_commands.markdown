@@ -1,4 +1,5 @@
 ## Vim
+### Supertab
 ### Open Quickfix list
 copen
 
@@ -105,7 +106,14 @@ binding.pry
 #### As rails console
 pry -r ./config/environment
 
+#### Gemset log
+cat /Users/steve/.rvm/log/ruby-1.9.3-p286/gemset.pristine.log
 
 #### Funding Circle
 in rails console to see crontab:
 Crontab.all.map {|c| [c.name, c.id] }
+
+## Mail
+Full search - <Opt><cmd>f
+
+
